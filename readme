@@ -1,0 +1,1 @@
+This repository contains the Jenkinsfile , deployment.yml & services.deployment to deploy to local syatem minikube cluster 
