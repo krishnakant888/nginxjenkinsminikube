@@ -16,3 +16,11 @@ spec:
                 name: nginx-service
                 port:
                   number: 80
+
+                  - path: /kk
+            pathType: Prefix
+            backend:
+              service:
+                name: example-service
+                port:
+                  number: 80
