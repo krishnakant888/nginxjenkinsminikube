@@ -17,7 +17,7 @@ spec:
                 port:
                   number: 80
 
-                  - path: /kk
+          - path: /kk2
             pathType: Prefix
             backend:
               service:
