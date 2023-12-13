@@ -19,4 +19,24 @@ spec:
         image: krishnakant888/nginx
         ports:
         - containerPort: 80
-          
+
+kind: Deployment
+metadata:
+  name: nginx-deployment
+  labels:
+    env: sandbox2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      env: sandbox2
+  template:
+    metadata:
+      labels:
+        env: sandbox2
+    spec:
+      containers:
+      - name: nginx
+        image: krishnakant888/nginx
+        ports:
+        - containerPort: 80          
