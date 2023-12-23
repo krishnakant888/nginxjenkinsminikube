@@ -20,7 +20,7 @@ spec:
         ports:
         - containerPort: 80
 
-         containers:
+      containers:
       - name: nginx2
         image: krishnakant888/nginx2
         ports:
