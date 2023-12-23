@@ -17,5 +17,3 @@ spec:
         image: krishnakant888/nginx
         ports:
         - containerPort: 80
-
-a
