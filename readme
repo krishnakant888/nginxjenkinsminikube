@@ -1,1 +1,2 @@
-This repository contains the Jenkinsfile , deployment.yml & services.deployment to deploy to local syatem minikube cluster 
+This repository uses two images krishnakant888/nginx & krishnakant888/nginx2 and serve it at anantkishore.in/kk anantkishore.in/pk 
+using ingress to achieve path based routing for two subdirectories /kk & /pk
