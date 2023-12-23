@@ -18,6 +18,10 @@ spec:
     metadata:
       labels:
         env: sandbox
+         template:
+    metadata:
+      labels:
+        env: sandbox2
     spec:
       containers:
       - name: nginx
