@@ -9,6 +9,11 @@ spec:
   selector:
     matchLabels:
       env: sandbox
+      spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      env: sandbox2
   template:
     metadata:
       labels:
