@@ -15,8 +15,8 @@ spec:
         env: sandbox
     spec:
     containers:
-      - name: nginx2
-        image: krishnakant888/nginx2
+      - name: nginx1
+        image: krishnakant888/nginx
         ports:
         - containerPort: 80
 
