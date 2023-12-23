@@ -13,7 +13,6 @@ spec:
     metadata:
       labels:
         env: sandbox
-    spec:
     containers:
       - name: nginx
         image: krishnakant888/nginx
