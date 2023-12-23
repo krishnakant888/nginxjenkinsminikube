@@ -2,22 +2,18 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-deployment
-  labels:
-    env: sandbox
 spec:
-  replicas: 4
   selector:
     matchLabels:
       env: sandbox
+  replicas: 2 # tells deployment to run 2 pods matching the template
   template:
     metadata:
       labels:
         env: sandbox
-    containers:
+    spec:
+      containers:
       - name: nginx
-        image: krishnakant888/nginx
+        image: rishnakant888/nginx
         ports:
         - containerPort: 80
-
-
-
