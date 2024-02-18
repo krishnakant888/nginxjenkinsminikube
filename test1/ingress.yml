@@ -8,11 +8,11 @@ spec:
   rules:
   - http:
       paths:
-        - path: /apple
+        - path: /kk
           backend:
-            serviceName: apple-service
+            serviceName: nginx-service
             servicePort: 5678
-        - path: /banana
+        - path: /pk
           backend:
-            serviceName: banana-service
+            serviceName: example-service
             servicePort: 5678
