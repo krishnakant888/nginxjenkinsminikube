@@ -3,7 +3,6 @@ kind: Ingress
 metadata:
   name: example-ingress
   annotations:
-    nginx.org/rewrites: "serviceName=nginx-ingress rewrite=/;"
 spec:
   rules:
     - host: anantkishore.in
