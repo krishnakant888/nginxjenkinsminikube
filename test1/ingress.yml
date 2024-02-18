@@ -1,30 +1,28 @@
+---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: example-ingress
   annotations:
-   kubernetes.io/ingress.class: "nginx"
-   nginx.ingress.kubernetes.io/use-regex: "true"
-   nginx.ingress.kubernetes.io/rewrite-target: /$1
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/use-regex: "true"
+    nginx.ingress.kubernetes.io/rewrite-target: /$1
 spec:
- - hosts:
-    - 
-  ingressClassName: nginx
-  rules:
-     - http:  
-        paths:
-          - path: /kk
-            pathType: Prefix
-            backend:
-              service:
-                name: nginx-service
-                port:
-                  number: 80
-
-          - path: /pk
-            pathType: Prefix
-            backend:
-              service:
-                name: nginx-service2
-                port:
-                  number: 80
+  -hosts:
+    rules:
+      - http:
+          paths:
+            - path: /kk
+              pathType: Prefix
+              backend:
+                service:
+                  name: nginx-service
+                  port:
+                    number: 80
+            - path: /pk
+              pathType: Prefix
+              backend:
+                service:
+                  name: nginx-service2
+                  port:
+                    number: 80
