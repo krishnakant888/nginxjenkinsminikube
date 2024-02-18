@@ -1,25 +1,25 @@
+---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: example-ingress
-  annotations:
-spec:
-  rules:
-    - host: edyog.com
-      http:
-        paths:
-          - path: /kk
-            pathType: Prefix
-            backend:
-              service:
-                name: nginx-service
-                port:
-                  number: 80
-
-          - path: /pk
-            pathType: Prefix
-            backend:
-              service:
-                name: example-service
-                port:
-                  number: 80
+annotations:
+  spec:
+    rules: null
+    n - host: anantkishore.in
+http:
+  paths:
+    - path: /kk
+      pathType: Prefix
+      backend:
+        service:
+          name: nginx-service
+          port:
+            number: 80
+    - path: /pk
+      pathType: Prefix
+      backend:
+        service:
+          name: example-service
+          port:
+            number: 80
