@@ -5,21 +5,21 @@ metadata:
   annotations:
 spec:
   rules:
-   # - host: anantkishore.in
-      http:
-        paths:
-          - path: /kk
-            pathType: Prefix
-            backend:
-              service:
-                name: nginx-service
-                port:
-                  number: 80
+    - host: anantkishore.in
+    http:
+      paths:
+        - path: /kk
+          pathType: Prefix
+          backend:
+            service:
+              name: nginx-service
+              port:
+                number: 80
 
-          - path: /pk
-            pathType: Prefix
-            backend:
-              service:
-                name: example-service
-                port:
-                  number: 80
+        - path: /pk
+          pathType: Prefix
+          backend:
+            service:
+              name: example-service
+              port:
+                number: 80
