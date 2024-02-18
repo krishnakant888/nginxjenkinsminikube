@@ -5,7 +5,7 @@ metadata:
   annotations:
 spec:
   rules:
-    - host: anantkishore.in
+   # - host: anantkishore.in
       http:
         paths:
           - path: /kk
