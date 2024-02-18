@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: example-ingress
   annotations:
-  nginx.ingress.kubernetes.io/app-root : /kk
+  kubernetes.io/ingress.class: nginx
 spec:
   ingressClassName: nginx
   rules:
