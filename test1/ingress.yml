@@ -7,7 +7,6 @@ metadata:
     
 spec:
   rules:
-    - host: hello-test.internal
       http:  
         paths:
           - path: /kk
