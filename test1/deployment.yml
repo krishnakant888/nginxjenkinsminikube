@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: nginx-deployment
   labels:
-    env: sandbox2
+    env: sandbox
 spec:
   selector:
     matchLabels:
