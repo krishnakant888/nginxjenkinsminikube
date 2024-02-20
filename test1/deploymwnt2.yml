@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: krishnakant888/nginx2:new
+        image: krishnakant888/nginx2:new2
         ports:
         - containerPort: 80
