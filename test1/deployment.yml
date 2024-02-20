@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: krishnakant888/nginx
+        image: krishnakant888/nginx:release1
         ports:
         - containerPort: 80
